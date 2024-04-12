@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/item_back_color"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:elevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/rect_orange"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textColor="@color/text_color"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textDisplay2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7"
+            android:background="@color/item_back_color"
+            android:ems="10"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:text="Clue text"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/text_color"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:elevation="7dp"/>
+
+        <TextView
+            android:id="@+id/timerDisplay2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:ems="10"
+            android:gravity="center|top"
+            android:textColor="@color/text_color"
+            android:inputType="textPersonName"
+            android:text="18:00"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:elevation="10dp"
+        android:id="@+id/piece"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/rect_orange"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/name1"
+            android:textColor="@color/text_color"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal|center_vertical"
+            android:inputType="textPersonName"
+            android:text="Name"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/textDisplay1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:textColor="@color/text_color"
+            android:layout_weight="7"
+            android:background="@color/item_back_color"
+            android:ems="10"
+            android:gravity="start"
+            android:inputType="textMultiLine"
+            android:padding="20dp"
+            android:text="Clue text"
+            android:textAlignment="gravity"
+            android:textSize="20sp"
+            android:elevation="7dp"/>
+
+        <TextView
+            android:id="@+id/timerDisplay1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:elevation="5dp"
+            android:textColor="@color/text_color"
+            android:ems="10"
+            android:gravity="center|top"
+            android:inputType="textPersonName"
+            android:text="18:00"
+            android:textSize="50sp" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/nextTimer"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+
+        android:background="@drawable/circle"
+        android:elevation="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/baseline_skip_next_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

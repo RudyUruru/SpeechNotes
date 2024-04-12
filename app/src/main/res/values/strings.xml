@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SpeechAssistance</string>
+
+    <string name="lecture_title">Lectures</string>
+    <string name="create">Create</string>
+    <string name="settings">Settings</string>
+    <string name="delete_lecture_message">Are you sure you want to delete the lecture / report?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="create_lecture">Enter the name of the new lecture</string>
+    <string name="no_notes">No notes</string>
+    <string name="clues">Clues:</string>
+    <string name="presentation_over">Presentation is over</string>
+    <string name="slide_time_over">Slide time is over</string>
+    <string name="title_of_noat">The title of the note</string>
+    <string name="duration_text">Duration</string>
+    <string name="enter_hint">Enter a note</string>
+    <string name="dark">Dark</string>
+    <string name="light">Light</string>
+</resources>
